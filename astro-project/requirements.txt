@@ -1,0 +1,5 @@
+astronomer-cosmos[dbt.all]
+apache-airflow-providers-airbyte[http]
+airflow-provider-great-expectations
+great_expectations
+black

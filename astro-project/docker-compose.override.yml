@@ -1,0 +1,19 @@
+version: "3.1"
+services:
+  scheduler:
+    volumes:
+      - ./dbt:/usr/local/airflow/dbt:rw
+      - ./gcp-account/XXXXX-XXXXX-XXXXX-XXXXX.json:/usr/local/airflow/gcloud/XXXXX-XXXXX-XXXXX-XXXXX.json:ro
+      - /tmp/airbyte_local:/tmp/airbyte_local
+
+  webserver:
+    volumes:
+      - ./dbt:/usr/local/airflow/dbt:rw
+      - ./gcp-account/XXXXX-XXXXX-XXXXX-XXXXX.json:/usr/local/airflow/gcloud/XXXXX-XXXXX-XXXXX-XXXXX.json:ro
+      - /tmp/airbyte_local:/tmp/airbyte_local
+
+  triggerer:
+    volumes:
+      - ./dbt:/usr/local/airflow/dbt:rw
+      - ./gcp-account/XXXXX-XXXXX-XXXXX-XXXXX.json:/usr/local/airflow/gcloud/dXXXXX-XXXXX-XXXXX-XXXXX.json:ro
+      - /tmp/airbyte_local:/tmp/airbyte_local

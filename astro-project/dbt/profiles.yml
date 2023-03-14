@@ -1,0 +1,14 @@
+data_warehouse_v1:
+  outputs:
+    dev:
+      dataset: made_with_ml
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /usr/local/airflow/gcloud/XXXXX-XXXXX-XXXXX-XXXXX.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: name-of-your-gcp-project
+      threads: 1
+      type: bigquery
+  target: dev
