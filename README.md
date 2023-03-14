@@ -1,5 +1,11 @@
-# dockerizing-made-with-ml
- 
+<h1 align="center">
+ Dockerizing madewithml.com Data Engineering task
+</h1> 
+
+<p align="center">
+<img src = 'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Cono6sgRNu7N5wF8J67fJg.png' width='800' height='400'> 
+</p>
+
  This is the first 'serious' DE project, where I've tried to Dockerize the whole ELT process presented here:
  https://madewithml.com/courses/mlops/data-stack/
  
